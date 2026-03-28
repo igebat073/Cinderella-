@@ -307,11 +307,12 @@
 			  if (isPlaying) { audio.pause(); playPauseBtn.innerHTML = '<i>▶️</i>'; }
 			  else { audio.play(); playPauseBtn.innerHTML = '<i>⏸</i>'; }
 			  isPlaying = !isPlaying;
-});
 volumeControl.addEventListener('input', () => { audio.volume = volumeControl.value; });
+	
 </script>
 
-        // Create confetti, balloons, hearts, and stars
+        <script>
+	// Create confetti, balloons, hearts, and stars
         function createFloatingElements() {
             const colors = ['#FF1493', '#8A2BE2', '#FFD700', '#FF4500', '#00BFFF', '#32CD32'];
             const elements = ['confetti', 'balloon', 'heart', 'star'];
