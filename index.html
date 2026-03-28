@@ -9,7 +9,6 @@
             box-sizing: border-box;
             font-family: 'Comic Sans MS', cursive, sans-serif;
         }
-
         body {
             background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
             height: 100vh;
@@ -305,8 +304,8 @@
 			});
 			playPauseBtn.addEventListener('click', () => {
 			  if (isPlaying) { audio.pause(); playPauseBtn.innerHTML = '<i>▶️</i>'; }
-			  else { audio.play(); playPauseBtn.innerHTML = '<i>⏸</i>'; }
-			  isPlaying = !isPlaying;
+			  else { audio.play(); playPauseBtn.innerHTML = '<i>⏸</i>';}
+			  isPlaying = !isPlaying;});
 volumeControl.addEventListener('input', () => { audio.volume = volumeControl.value; });
 </script>
         <script>
