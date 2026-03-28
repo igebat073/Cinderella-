@@ -346,8 +346,8 @@
                 duration: 0.3,
                 onComplete: () => {
                     // Change this URL to your next page
-                    window.location.href = "countdown.html";
-                    
+					localStorage.setItem('songTime', audio.currentTime);
+					window.location.href = "countdown.html";
                     // For demonstration, we'll just show an alert
                     
                 }
